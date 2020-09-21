@@ -1,9 +1,5 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
-<<<<<<< HEAD
-=======
-//re-doing pull request
->>>>>>> 3342778a362a46ea5d740e783d8c56a76d9a1f13
 
 const Post = new Schema(
   {
