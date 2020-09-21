@@ -16,11 +16,13 @@ const lorem = new LoremIpsum({
 const db = require('../db/connection')
 const Post = require('../models/post') 
 //const User = require('../models/user') 
+let posts = []
+const howMany = process.argv[2] || 10
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
-async function generateData(n){
 
+async function generateData(n){
   for (let i=0; i < n; i++){
     let record = {}
     const image = await Picsum.random();
@@ -31,6 +33,14 @@ async function generateData(n){
     record.author = faker.name.firstName();
     posts.push(record);
   }
+
+  await Post.insertMany(posts)
+  console.log(`Created ${n} Posts!`)
 }
 
-generateData(10);
+const run = async () => {
+  await generateData(howMany); // Generate 10 records by default or more if number given
+  db.close()
+}
+
+run()
