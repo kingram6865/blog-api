@@ -26,7 +26,6 @@ async function generateData(n){
   for (let i=0; i < n; i++){
     let record = {}
     const image = await Picsum.random();
-    record._id = uuidv4();
     record.title = `Test ${i} ${lorem.generateWords(5)}`;
     record.imgURL = image.url;
     record.content = lorem.generateSentences(5);
