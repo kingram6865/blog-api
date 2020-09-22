@@ -23,12 +23,12 @@ class PostCards extends Component {
     )
 
     return (
-      <dvi className="post-cards">
+      <div className="post-cards">
         <div className="latest">LATEST</div>
         <div className="cards">
           {CARDS}
         </div>
-      </dvi>
+      </div>
     )
   }
 }
