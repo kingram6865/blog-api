@@ -19,7 +19,7 @@ const Posts = (props) => {
 
   return (
     <div className='posts'>
-      <h4>placeholder text</h4>
+      <h3>placeholder text</h3>
     </div>
   )
 }
