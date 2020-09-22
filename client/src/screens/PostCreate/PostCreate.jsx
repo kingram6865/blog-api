@@ -9,6 +9,22 @@ const PostCreate = (props) => {
     title: '',
     author: '',
     imgURL: '',
-    : ''
+    content: ''
   })
+
+  const [isCreated, setCreated] = useState(false)
+
+  const handleChange = (event) => {
+    const { name, value } = event.target 
+    setPost({
+      ...post,
+      [name]: value
+    })
+  }
+
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    const created = await createPost(post)
+    
+  }
 }
