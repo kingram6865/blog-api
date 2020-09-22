@@ -12,7 +12,7 @@ class PostCards extends Component {
   }
 
   async componentDidMount() {
-    const posts = await getPost()
+    const posts = await getPosts()
     this.setState({posts})
   }
 
