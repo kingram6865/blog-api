@@ -23,6 +23,7 @@ const Posts = (props) => {
       imgURL={post.imgURL}
       content={post.content}
       author={post.author}
+      key={index}
     />);
 
   return (
