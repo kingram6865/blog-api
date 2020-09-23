@@ -6,6 +6,7 @@ nav {
   z-index: 1;
   top: 0;
   left: 0;
+
 }
 
 .nav-container {
@@ -14,17 +15,27 @@ nav {
   margin: 0;
   box-shadow: 1px 1px 10px darkgrey;
   width: 100%;
+  justify-content: space-between;
 }
 
 .nav-app-name {
   color: white;
+  margin-left: 30px;
 }
 
-a {
+.nav-links-container {
+  margin-right: 30px;
+}
+
+.nav-link {
+  margin: 20px;
+}
+
+.nav-container a {
   text-decoration: none;
   color: white;
 }
 
-a:visited {
+.nav-container a:visited {
   color: white;
 }

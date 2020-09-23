@@ -9,7 +9,8 @@ const Nav = () => {
         <NavLink to="/" className="nav-app-name">Candy Blog</NavLink>
         <div className="nav-links-container">
           <NavLink to="/posts" className="nav-link">Posts</NavLink>
-          <NavLink to="/add-post">Add Post</NavLink>
+          <span>|</span>
+          <NavLink to="/add-post" className="nav-link">Add Post</NavLink>
         </div>
       </div>
     </nav>
