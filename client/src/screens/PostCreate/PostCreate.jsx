@@ -75,3 +75,5 @@ const PostCreate = (props) => {
     </Layout>
   );
 };
+
+export default PostCreate
