@@ -27,7 +27,7 @@ async function generateData(n){
     let record = {}
     const image = await Picsum.random();
     record.title = `Test ${i} ${lorem.generateWords(5)}`;
-    record.imgURL = image.url;
+    record.imgURL = image.download_url;
     record.content = lorem.generateSentences(5);
     record.author = faker.name.firstName();
     posts.push(record);
