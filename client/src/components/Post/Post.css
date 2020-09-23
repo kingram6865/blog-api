@@ -18,19 +18,22 @@
   width: 300px;
 }
 
-.post-name {
+.post-title {
   font-size: 24px;
   padding: 10px;
+  color: black;
 }
 
 .content {
   font-size: 18px;
   padding: 10px;
+  color: black;
 }
 
 .author {
   font-size: 18px;
   padding: 10px;
+  color: black;
 }
 
 @media (max-width: 500px) {
