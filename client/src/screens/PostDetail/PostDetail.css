@@ -1,0 +1,14 @@
+.post-detail-container {
+  display: flex;
+  width: 800px;
+}
+
+.post-detail-image {
+  width: 500px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
