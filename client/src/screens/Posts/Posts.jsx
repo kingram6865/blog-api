@@ -3,25 +3,36 @@ import './Posts.css'
 
 import Post from '../../components/Post/Post'
 import Layout from '../../components/shared/Layout/Layout'
+import { getPosts } from "../../services/posts";
 
 const Posts = (props) => {
-  const [posts, setPosts] = useState([])
+  const [allPosts, setAllPosts] = useState([])
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const posts = await getPosts()
-      setPosts(posts)
+      const posts = await getPosts();
+      setAllPosts(posts);
     }
-  }, [])
+    fetchPosts();
+  }, []);
 
-  const postsJSX = queriedPosts.map((post, index) =>
-    <Post _id={post.id} name={post.name} imgURL={post.imgURL} />)
+  const postsJSX = allPosts.map((post, index) =>
+    <Post
+      _id={post._id}
+      title={post.title}
+      imgURL={post.imgURL}
+      content={post.content}
+      author={post.author}
+      key={index}
+    />);
 
   return (
-    <div className='posts'>
-      <h3>placeholder text</h3>
-    </div>
+    <Layout>
+      <div className='posts'>
+        {postsJSX}
+      </div>
+    </Layout>
   )
 }
 
-export default Posts 
+export default Posts;
