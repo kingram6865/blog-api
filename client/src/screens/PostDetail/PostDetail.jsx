@@ -24,8 +24,13 @@ const PostDetail = (props) => {
 
   return (
     <Layout>
+<<<<<<< HEAD
       <div className="post-detail-container">
         <img className="post-detail-image" src={post.imgURL} alt={post.name} />
+=======
+      <div className="post-detail">
+        <img className="post-detail-image" src={post.imgURL} alt={post.title} />
+>>>>>>> 0c1ec638286c54d04ba6e663b6aa0d446d7c92b9
         <div className="detail">
           <div className="title">{post.title}</div>
           <div className="content">{`${post.content}`}</div>

@@ -1,9 +1,7 @@
+
 .posts {
   width: 90vw;
   display: flex;
   flex-direction: column;
 }
 
-.posts a {
-  text-decoration: none;
-}
