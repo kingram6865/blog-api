@@ -4,7 +4,7 @@ import { useParams, Redirect } from 'react-router-dom'
 import Layout from '../../components/shared/Layout/Layout'
 import { getPost, updatePost } from '../../services/posts'
 
-const PosttEdit = (props) => {
+const PostEdit = (props) => {
   const [post, setPost] = useState({
     title: '',
     imgURL: '',
@@ -92,3 +92,5 @@ const PosttEdit = (props) => {
     </Layout>
   )
 }
+
+export default PostEdit
