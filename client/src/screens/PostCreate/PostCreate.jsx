@@ -65,7 +65,7 @@ const PostCreate = (props) => {
           className="input-image-link"
           placeholder="Image Link"
           value={post.imgURL}
-          name="Image Link"
+          name="imgURL"
           required
           autoFocus
           onChange={handleChange}
