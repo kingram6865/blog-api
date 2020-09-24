@@ -14,7 +14,7 @@ const PostEdit = (props) => {
 
   const [isUpdated, setUpdated] = useState(false)
   let { id } = useParams()
-  
+
   useEffect(() => {
     const fetchPost = async () => {
       const post = await getPost(id)
@@ -69,20 +69,20 @@ const PostEdit = (props) => {
             onChange={handleChange}
           />
           <input
-            className="input-content"
-            placeholder='Content'
-            value={post.content}
-            name='price'
+            className="input-author"
+            placeholder='Author'
+            value={post.author}
+            name='author'
             required
             onChange={handleChange}
           />
           <textarea
-            className="textarea-author"
+            className="textarea-content"
             rows={10}
             cols={78}
-            placeholder='Author'
-            value={post.author}
-            name='description'
+            placeholder='Content'
+            value={post.content}
+            name='content'
             required
             onChange={handleChange}
           />

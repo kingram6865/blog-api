@@ -1,0 +1,45 @@
+.post-detail-container {
+  display: flex;
+  width: 800px;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.post-detail-image {
+  width: 500px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 10px;
+  align-content: center;
+}
+
+.title {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.content {
+  font-size: 14px;
+}
+
+.author {
+  font-size: 14px;
+}
+
+.button-container {
+  margin-top: 10px;
+}
+
+.button-container button{
+  margin: 0px 20px;
+}
+
+.edit-link {
+  text-decoration: none;
+  color: black;
+}
