@@ -44,19 +44,19 @@ const PostCreate = (props) => {
           onChange={handleChange}
         />
         <input
-          className="input-content"
-          placeholder="content"
-          value={post.content}
-          name="content"
+          className="input-author"
+          placeholder="author"
+          value={post.author}
+          name="author"
           required
           autoFocus
           onChange={handleChange}
         />
         <input
-          className="input-author"
-          placeholder="author"
-          value={post.author}
-          name="author"
+          className="input-content"
+          placeholder="content"
+          value={post.content}
+          name="content"
           required
           autoFocus
           onChange={handleChange}
