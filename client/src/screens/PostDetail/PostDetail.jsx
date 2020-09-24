@@ -29,10 +29,10 @@ const PostDetail = (props) => {
         <div className="detail">
           <div className="title">{post.title}</div>
           <div className="content">{`${post.content}`}</div>
-          <div className="author">{post.author}</div>
+          <div className="author">Author: {post.author}</div>
           <div className="button-container">
             <button className="edit-button">
-              <Link className="edit-link" to={`/post/${post._id}/edit`}>
+              <Link className="edit-link" to={`/posts/${post._id}/edit`}>
                 Edit
               </Link>
             </button>

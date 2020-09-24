@@ -6,7 +6,6 @@ nav {
   z-index: 1;
   top: 0;
   left: 0;
-
 }
 
 .nav-container {
@@ -16,11 +15,15 @@ nav {
   box-shadow: 1px 1px 10px darkgrey;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav-app-name {
   color: white;
   margin-left: 30px;
+  font-size: 30px;
+  letter-spacing: -2px;
+  font-weight: bold;
 }
 
 .nav-links-container {
@@ -38,4 +41,10 @@ nav {
 
 .nav-container a:visited {
   color: white;
+}
+
+.nav-container a:hover {
+  color: black;
+  background-color: white;
+  transition: all 0.3s;
 }
